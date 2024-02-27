@@ -27,9 +27,6 @@ pipeline {
                     junit '**/target/surefire-reports/TEST-*.xml'
                     jacoco(execPattern: '**/target/jacoco.exec')
                 }
-                always {
-                    // You can add more post-build actions here
-                }
             }
         }
     }
