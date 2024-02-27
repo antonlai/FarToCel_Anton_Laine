@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'hhttps://github.com/antonlai/FarToCel_Anton_Laine'
+                git branch: 'master', url: 'https://github.com/antonlai/FarToCel_Anton_Laine'
             }
         }
 
