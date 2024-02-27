@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools { 
+      maven 'MAVEN_HOME' 
+      jdk 'JAVA_HOME' 
+    }
 
     environment {
         PATH = "${env.PATH}:/opt/homebrew/Cellar/maven/3.9.6" // Update the PATH to include the directory of Maven
