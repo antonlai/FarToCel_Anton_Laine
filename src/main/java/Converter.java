@@ -7,4 +7,9 @@ public class Converter {
         return (celsius * 9 / 5) + 32;
     }
 
+  public static double convertKelToFar(double kelvin) {
+      return (kelvin - 273.15) * 9/5 + 32;
+  }
+
 }
+

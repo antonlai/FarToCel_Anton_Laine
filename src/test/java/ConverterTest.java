@@ -17,4 +17,10 @@ class ConverterTest {
         double result = Converter.celsiusToFahrenheit(37);
         assertEquals(98.6, result, 0.001);
     }
+
+    @Test
+    void convertKelToFar() {
+        double result = Converter.convertKelToFar(300.1);
+        assertEquals(80, result, 1);
+    }
 }
